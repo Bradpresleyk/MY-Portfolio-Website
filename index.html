@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Responsive Portfolio Page | HTML & CSS</title>
+      <link rel="stylesheet" href="master.css">
+      <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+</head>
+<body>
+      <div class="wrapper">
+            <nav class="navBar">
+                  <a id="bkHeaderLink" href="/index.html">
+                        <h1 id="bkHeader">BK.</h1>
+                  </a>
+                  <div class="links">
+                  <a  class="link" href="#bkHeaderLink">Home</a>
+                  <a  class="link" href="#myProjectsH">Work</a>
+                  <a  class="link" href="#connect">Contact</a>
+                 </div>
+            </nav>
+
+            <header>
+                  <h1>Hi! I'm Brad King</h1>
+                  <h1 class="anim">Web Developer</h1>
+                  <br>
+                  <p class="anim">I'm a self taught web developer based in Port Elizabeth,South Africa, and I work in an agile inclusive way were I always put the client first.</p>
+            </header>
+             <h1 id="myProjectsH">My Projects</h1>
+            <div id="projectsSection" class="work">
+                  <a href="TeaShop/index.html"><img class="anim" src="Projects/TeaShop.png" alt=""></a>
+                  <a href="intro-section-with-dropdown-navigation-main/intro-section-with-dropdown-navigation-main/index.html"><img class="anim" src="Projects/NewInteractive.png" alt=""></a>
+                  <a href="advice-generator-app-main/advice-generator-app-main/index.html"><img class="anim" src="Projects/AdviceGen.png" alt=""></a>
+                  <a href="testimonials-grid-section-main/testimonials-grid-section-main/index.html"><img class="anim" src="Projects/TestimonialsSite.png" alt="project img"></a>
+            </div>
+
+           
+            <footer>
+                  <h1 id="connect">Let's connect!</h1>
+                  <p id="email">bradpresley30@gmail.com</p>
+                  <p id="phone">+(27) 1 392 7625</p>
+                  
+
+                  <div class="social">
+                        <p id="footerLogo">©Brad King 2022</p>
+                  </div>
+            </footer>
+      </div>
+      <script type="text/javascript">
+            window.sr = ScrollReveal();
+            sr.reveal('.anim');
+      </script>
+
+</body>
+</html>

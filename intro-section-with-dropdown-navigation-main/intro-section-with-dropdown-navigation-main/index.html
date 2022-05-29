@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="sass.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <nav class="navbar">
+     <!-- Menu Items List -->
+      <div class="menuItems">
+        <!-- Snap Logo -->
+        <img id="mainLogo" src="images/logo.svg" alt="">
+        <!-- burger Menu -->
+         <img id="burgerMenu" src="images/icon-menu.svg" alt="">
+         </div>
+        <!-- Features Nav Item -->
+        <a id="featuresNav" class="features navItem">Features<img class="arrows" src="images/icon-arrow-down.svg" alt=""></a>
+       
+         <a class="company navItem">Company<img class="arrows" src="images/icon-arrow-down.svg" alt="">
+           <!-- Company Dropdown Item List -->
+           <ul class="companyDropDown">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+           </ul>
+          </a>
+          <a class="careers navItem">Careers</a>
+          <a class="about navItem">About</a>
+          <!-- A Container for the login and register -->
+          <div class="loginAndRegister">
+          <a class="login navItem">Login</a>
+          <button id="registerNavBtn"><a class="register navItem">Register</a></button>
+          </div>
+        </nav>
+
+   <!-- Features Dropdown Item List-->
+   <ul class="featuresDropDown">
+    <li class="navText"><img class="navImages" src="images/icon-todo.svg" alt="">Todo List</li>
+    <li class="navText"><img class="navImages" src="images/icon-calendar.svg" alt="">Calendars</li>
+    <li class="navText"><img class="navImages" src="images/icon-reminders.svg" alt="">Reminders</li>
+    <li class="navText"><img class="navImages" src="images/icon-planning.svg" alt="">Planning </li>
+  </ul>
+          
+
+      <!-- SideBar -->
+       <nav class="sideBar">
+          <!-- Features Nav Item -->
+          <a id="closeCross">&times;</a>
+        <a id="featuresSlide" class="features side">Features <img class="arrows" src="images/icon-arrow-down.svg" alt=""></a>
+          <!-- Features Dropdown Item List-->
+          <ul class="featuresDropDownSide sideItems">
+            <li><img class="images" src="images/icon-todo.svg" alt="">Todo List</li>
+            <li><img class="images" src="images/icon-calendar.svg" alt="">Calendars</li>
+            <li><img class="images" src="images/icon-reminders.svg" alt="">Reminders</li>
+            <li><img class="images" src="images/icon-planning.svg" alt="">Planning</li>
+          </ul>
+
+         <a id="companySlide" class="company side">Company <img id="companyDownArrow" class="arrows" src="images/icon-arrow-down.svg" alt="">
+           <!-- Company Dropdown Item List -->
+           <ul class="companyDropDownSide sideItems">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+           </ul>
+          </a>
+          <a class="careers side">Careers</a>
+          <a class="about side">About</a>
+          <div class="loginAndRegister">
+          <a class="login side">Login</a>
+          <button id="registerBtn"><a class="register side">Register</a></button>
+          </div>
+       </nav>
+       <!-- Main Image Mobile -->
+ <img id="mobileImage" src="images/image-hero-mobile.png" alt="">
+        <!-- Main Section -->
+      <div class="mainSection">
+      <!-- Header -->
+      <h1 id="mainHeader">Make remote work</h1>
+      <!-- paragraph -->
+       <p id="paragraph">Get your team in sync, no matter your location. Streamline processes, 
+       create team rituals, and watch productivity soar.</p>
+       <!-- Learn More Button -->
+       <button id="learnMoreBtn">Learn more</button>
+       <!-- Bottom logos -->
+       <div class="bottomLogos">
+         <img id="dataBiz" class="bottomLogo" src="images/client-databiz.svg" alt="">
+         <img id="audioPhile" class="bottomLogo" src="images/client-audiophile.svg" alt="">
+         <img id="clientMeet" class="bottomLogo" src="images/client-meet.svg" alt="">
+         <img id="clientMaker" class="bottomLogo" src="images/client-maker.svg" alt="">
+       </div>  
+</div>
+
+ 
+ <!-- Main Image Desktop -->
+<img id="desktopImage" src="images/image-hero-desktop.png" alt="">
+  <script src="app.js"></script>
+</body>
+</html>

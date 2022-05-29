@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- Icon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="sass.css" rel="stylesheet">
+  <!-- Title -->
+  <title>Frontend Mentor | Advice generator app</title>
+</head>
+<body>
+      <!-- Advice Card -->
+      <div class="card">
+        <!-- Advice Logo And Number -->
+        <h1 class="adviceLogo">ADVICE #<span id="number"></span></h1>
+        <p id="advice">
+
+        </p>
+        
+        <picture>
+          <source media="(max-width:768px)" srcset="./images/pattern-divider-desktop.svg">
+          <img src="./images/pattern-divider-mobile.svg" alt="">
+        </picture>
+        <!-- Icon Dice -->
+        <button class="btn">
+        <svg id="dice" width="24" height="24" 
+        xmlns="http://www.w3.org/2000/svg"><path
+        d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 
+        4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 
+        4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 
+        1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 
+        4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 
+        1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 
+        1.5 1.5 0 0 1 0 3Z" fill="#202733"/></svg>
+        </button>
+        </div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1002 @@
+// Color Variables 
+$almostWhite: hsl(0, 0%, 98%);
+$mediumGray: hsl(0, 0%, 41%);
+$almostBlack: hsl(0, 0%, 8%);
+
+
+// Font Family
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+
+
+*{
+    list-style:none;
+    font-family:"Epilogue";
+}
+
+body{
+    box-sizing:border-box;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+}
+
+#mainHeader{
+    font-weight:700;
+}
+
+#paragraph{
+    font-weight:500;
+}
+
+#registerNavBtn{
+    display:none;
+   
+}
+
+.featuresDropDown{
+    display:none;
+}
+
+.companyDropDown{
+    display:none;
+}
+
+#desktopImage{
+    display:none;
+}
+
+.navItem{
+    display:none;
+}
+
+.sideBar{
+    height:100vh;
+    position:fixed;
+    z-index:1;
+    width:0;
+    top:0;
+    right:0;
+    background:white;
+    overflow-x:hidden;
+    padding-top:20%;
+    font-size:1rem;
+    display:flex;
+    flex-direction: column;
+    transition: 0.5s;
+    
+}
+
+#closeCross{
+    position:absolute;
+    top:0;
+    right:12px;
+    font-size:5rem;
+    margin-right:1%;
+}
+
+.side{
+    display:block;
+    //text-align:center;
+    margin:5%;
+}
+
+.sideItems{
+    display:none;
+}
+
+.navbar{
+    height:10vh;
+    width:100%;
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-bottom:5%;
+}
+
+.menuItems{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+#mainLogo{
+    margin-left:-15%;
+
+}
+
+#burgerMenu{
+    display:flex;
+    margin-right:-15%;
+}
+
+
+.arrows{
+    //height:1rem;
+    //width:1rem;
+    margin-left:2%;
+}
+
+
+#mobileImage{
+    width:100%;
+}
+
+.images{
+    margin-right:8%;
+}
+
+li{
+    margin:8%;
+}
+
+.mainSection{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    grid-area:"mainContent";
+}
+
+#learnMoreBtn{
+    background:$almostBlack;
+    color:white;
+    height:2.7rem;
+    width:9rem;
+    border-radius:25px;
+    margin-bottom:3%;
+    margin-top:3%;
+}
+
+
+.bottomLogos{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items:flex-end;
+    margin-top:8%;
+    //margin-left:-35%;
+    //background:lightblue;
+    width:100%;
+}
+
+.bottomLogo{
+    width:4rem;
+}
+
+
+
+
+.loginAndRegister{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:5%;
+}
+
+#registerBtn{
+    border-radius:15px;
+    border:1px solid black;
+    background:white;
+    padding:1%;
+    height:2.5rem;
+    width:12rem;
+}
+
+
+// Media Queries
+
+
+// Media Query For Mobile Landscape
+@media only screen and (min-width:480px) and(max-width:767px){
+    body{
+        background:$almostWhite;
+    }
+
+    #mobileImage{
+        display:block;
+        margin-top:25%;
+        margin-left:0%;
+        width:85%;
+        margin-right:20%;
+    }
+
+    #desktopImage{
+        display:none;
+        
+    }
+
+    #burgerMenu{
+        display:none;
+    }
+
+    .mainSection{
+        display:flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items:flex-start;
+        position:absolute;
+        width:25%;
+        margin-top:12%;
+        margin-left:10%;
+        margin-right:8%;
+        margin-bottom:2%;
+    }
+
+    #mainLogo{
+        width:3rem;
+        margin-left:1px;
+    }
+
+    #mainHeader{
+        font-size:1.5rem;
+    }
+    
+    #paragraph{
+        font-size:0.75rem;
+        line-height:1.2;
+        margin-top:0;
+    }
+    
+
+    #learnMoreBtn{
+        border-radius:10px;
+        width:6rem;
+        height:1.9rem;
+    }
+    
+    #learnMoreBtn:hover{
+        background:$almostWhite;
+        color:$almostBlack;
+    }
+
+
+    .navbar{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-evenly;
+        align-items:center;
+        background:$almostWhite;
+        width:100vw;
+        height:10vh;
+        margin-bottom:5%;
+
+    }
+    
+    .navItem{
+        display:inline-block;
+        font-size:8px;
+    }
+    
+    .arrows{
+        margin-left:4px;
+    }
+    
+    .loginAndRegister{
+        display:flex;
+        flex-direction: row;
+        margin-top:0;
+        margin-left:15%;
+    
+    }
+    
+    .login{
+        margin-right:1rem;
+        font-size:8px;
+    }
+    
+    #registerNavBtn{
+        display:block;
+        margin-left:1rem;
+        border-radius:10px;
+        width:3.5rem;
+        height:1.7rem;
+        background:$almostWhite;
+        color:$almostBlack;
+        margin-right:1rem;
+        font-size:8px;
+    }
+    
+    #registerNavBtn:hover{
+        background:$almostBlack;
+        color:$almostWhite;
+    }
+    
+    .featuresDropDown{
+        flex-direction:column;
+        width:10%;
+        height:18%;
+        position:absolute;
+        margin-left:15%;
+        margin-top:4%;
+        background:white;
+        font-size:6px;
+        border-radius:8px;
+        padding:0;
+        text-align:center;
+    }
+    
+    .navImages{
+       width:10%;
+       margin-right:10%;
+       margin-bottom:1%;
+    }
+    
+    .navText{
+        margin-left:10%;
+        font-size:8px;
+        margin-bottom:1%;
+        display:flex;
+        align-items:center;
+    }
+    
+    
+    .featuresDropDown li:hover{
+        background:$almostBlack;
+        color:$almostWhite;
+        
+    }
+    
+    
+    .companyDropDown{
+        flex-direction:column;
+        width:10%;
+        height:12%;
+        position:absolute;
+        margin-left:0%;
+        margin-top:1%;
+        background:white;
+        font-size:6px;
+        border-radius:8px;
+        padding:0;
+        text-align:center;
+    }
+    
+    .companyDropDown li:hover{
+        background:$almostBlack;
+        color:$almostWhite;
+    }
+
+    .bottomLogos{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        margin-top:8%;
+        //margin-left:-35%;
+        //background:lightblue;
+        width:100%;
+    }
+    
+    .bottomLogo{
+        width:2rem;
+    }
+}
+
+
+
+
+
+
+// Media Query For Tablet
+@media only screen and (min-width:768px) and (max-width:979px){
+    body{
+        background:$almostWhite;
+    }
+
+    #mobileImage{
+        display:none;
+    }
+
+    #desktopImage{
+        display:block;
+        width:90%;
+        margin-top:55%;
+        margin-left:-25%;
+        margin-right:75%;
+        margin-bottom:5%
+    }
+
+    .mainSection{
+        width:80%;
+        margin-top:55%;
+        margin-left:-45%;
+        margin-right:5%;
+    }
+
+    #burgerMenu{
+        display:none;
+    }
+
+    #mainLogo{
+        width:4rem;
+        margin-left:1px;
+    }
+    
+    #mainHeader{
+        font-size:2rem;
+    }
+    
+    #paragraph{
+        font-size:0.80rem;
+        line-height:1.2;
+        margin-top:0;
+    }
+    
+    #learnMoreBtn{
+        border-radius:10px;
+    }
+    
+    #learnMoreBtn:hover{
+        background:$almostWhite;
+        color:$almostBlack;
+    }
+    
+    .navbar{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-evenly;
+        align-items:center;
+        background:$almostWhite;
+        width:100vw;
+        height:10vh;
+        margin-bottom:5%;
+    }
+    
+    .navItem{
+        display:inline-block;
+    }
+    
+    .arrows{
+        margin-left:4px;
+    }
+    
+    .loginAndRegister{
+        display:flex;
+        flex-direction: row;
+        margin-top:0;
+        margin-left:25%;
+    
+    }
+    
+    .login{
+        margin-right:1rem;
+    }
+    
+    #registerNavBtn{
+        display:block;
+        margin-left:1rem;
+        border-radius:10px;
+        width:6rem;
+        height:2.2rem;
+        background:$almostWhite;
+        color:$almostBlack;
+    }
+    
+    #registerNavBtn:hover{
+        background:$almostBlack;
+        color:$almostWhite;
+    }
+    
+    .featuresDropDown{
+        //display:none;
+        flex-direction:column;
+        width:10%;
+        height:18%;
+        position:absolute;
+        margin-left:12%;
+        margin-top:5%;
+        background:white;
+        font-size:8px;
+        border-radius:8px;
+        padding:0;
+        text-align:center;
+        z-index:1;
+    }
+    
+    .navImages{
+       width:10%;
+       margin-right:10%;
+       margin-bottom:1%;
+    }
+    
+    .navText{
+        margin-left:10%;
+        font-size:8px;
+        margin-bottom:1%;
+        display:flex;
+        align-items:center;
+    }
+    
+    .featuresDropDown li:hover{
+        background:$almostBlack;
+        color:$almostWhite;
+        
+    }
+    
+    .companyDropDown{
+        flex-direction:column;
+        width:10%;
+        height:12%;
+        position:absolute;
+        margin-left:0%;
+        margin-top:1%;
+        background:white;
+        font-size:8px;
+        border-radius:8px;
+        padding:0;
+        text-align:center;
+        z-index:1;
+    }
+    
+    .companyDropDown li:hover{
+        background:$almostBlack;
+        color:$almostWhite;
+    }
+
+    .bottomLogos{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items:flex-end;
+        margin-top:8%;
+        //width:50%;
+    }
+    
+    .bottomLogo{
+        width:3rem;
+    }
+}
+
+
+
+
+
+
+
+// Media Query For IPad Portrait view
+@media only screen and (min-width:768px) and (max-width:1024px){
+    body{
+        background:$almostWhite;
+    }
+
+
+    #mobileImage{
+        display:none;
+    }
+
+    #desktopImage{
+        display:block;
+        width:100%;
+        margin-top:85%;
+        margin-right:10%;
+    }
+
+    .mainSection{
+        margin-top:85%;
+    }
+
+    #burgerMenu{
+        display:none;
+    }
+
+    
+    .featuresDropDown{
+        flex-direction:column;
+        width:10%;
+        height:12%;
+        position:absolute;
+        margin-left:10%;
+        margin-top:10%;
+        background:white;
+        font-size:10px;
+        border-radius:8px;
+        padding:0;
+        text-align:center;
+        z-index:1;
+    }
+    
+    .navImages{
+       width:10%;
+       margin-right:10%;
+       margin-bottom:1%;
+    }
+    
+    .navText{
+        margin-left:10%;
+        font-size:8px;
+        margin-bottom:1%;
+        display:flex;
+        align-items:center;
+    }
+    
+    
+    .featuresDropDown li:hover{
+        background:$almostBlack;
+        color:$almostWhite;
+        
+    }
+    
+    
+    .companyDropDown{
+        flex-direction:column;
+        width:10%;
+        height:12%;
+        position:absolute;
+        margin-left:0%;
+        margin-top:1%;
+        background:white;
+        font-size:10px;
+        border-radius:8px;
+        padding:0;
+        text-align:center;
+        z-index:1;
+    }
+    
+    .companyDropDown li:hover{
+        background:$almostBlack;
+        color:$almostWhite;
+    }
+
+    .bottomLogos{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-around;
+        align-items:flex-end;
+        margin-top:8%;
+    }
+    
+    .bottomLogo{
+        width:3rem;
+    }
+
+}
+
+
+
+
+
+// Media Query For Typical desktop
+@media only screen and (min-width:1024px) and (max-width:1199px){
+    body{
+        background:$almostWhite;
+    }
+
+    #mobileImage{
+        display:none;
+    }
+
+    #desktopImage{
+        display:block;
+        width:100%;
+        margin-top:45%;
+        margin-right:10%;
+    }
+
+    .mainSection{
+        margin-top:35%;
+        margin-left:-85%;
+        margin-right:5%;
+
+    }
+
+    #burgerMenu{
+        display:none;
+    }
+
+
+    #mainLogo{
+        width:5rem;
+        margin-left:1px;
+    }
+    
+    #mainHeader{
+        font-size:3rem;
+    }
+    
+    #paragraph{
+        font-size:1.5rem;
+        line-height:1.2;
+        margin-top:0;
+    }
+    
+    #learnMoreBtn{
+        border-radius:10px;
+    }
+    
+    #learnMoreBtn:hover{
+        background:$almostWhite;
+        color:$almostBlack;
+    }
+    
+    .navbar{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-evenly;
+        align-items:center;
+        background:$almostWhite;
+        width:100vw;
+        height:10vh;
+        margin-bottom:5%;
+    }
+    
+    .navItem{
+        display:inline-block;
+    }
+    
+    .arrows{
+        margin-left:4px;
+    }
+    
+    .loginAndRegister{
+        display:flex;
+        flex-direction: row;
+        margin-top:0;
+        margin-left:25%;
+    
+    }
+    
+    .login{
+        margin-right:1rem;
+    }
+    
+    #registerNavBtn{
+        display:block;
+        margin-left:1rem;
+        border-radius:10px;
+        width:6rem;
+        height:2.2rem;
+        background:$almostWhite;
+        color:$almostBlack;
+    }
+    
+    #registerNavBtn:hover{
+        background:$almostBlack;
+        color:$almostWhite;
+    }
+    
+    .featuresDropDown{
+        //display:none;
+        flex-direction:column;
+        width:10%;
+        height:18%;
+        position:absolute;
+        margin-left:15%;
+        margin-top:5%;
+        background:white;
+        font-size:10px;
+        border-radius:8px;
+        padding:0;
+        text-align:center;
+        z-index:1;
+    }
+    
+    .navImages{
+       width:10%;
+       margin-right:10%;
+       margin-bottom:1%;
+    }
+    
+    .navText{
+        margin-left:10%;
+        font-size:8px;
+        margin-bottom:1%;
+        display:flex;
+        align-items:center;
+    }
+    
+    
+    .featuresDropDown li:hover{
+        background:$almostBlack;
+        color:$almostWhite;
+        
+    }
+    
+    
+    .companyDropDown{
+        flex-direction:column;
+        width:10%;
+        height:12%;
+        position:absolute;
+        margin-left:0%;
+        margin-top:1%;
+        background:white;
+        font-size:10px;
+        border-radius:8px;
+        padding:0;
+        text-align:center;
+        z-index:1;
+    }
+    
+    .companyDropDown li:hover{
+        background:$almostBlack;
+        color:$almostWhite;
+    }
+
+    .bottomLogos{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-around;
+        align-items:flex-end;
+        margin-top:8%;
+    }
+    
+    .bottomLogo{
+        width:3rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+// Desktop Media Query
+@media only screen and (min-width:1200px){
+
+body{
+    background:$almostWhite;
+}
+
+#mobileImage{
+    display:none;
+}
+
+#desktopImage{
+    display:block;
+    width:55%;
+    height:auto;
+    margin-left:25%;
+    margin-top:15%;
+    margin-bottom:20%;
+}
+
+#burgerMenu{
+    display:none;
+}
+
+.mainSection{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:flex-start;
+    position:absolute;
+    width:50%;
+    margin-top:10%;
+    margin-left:5%;
+    margin-right:2%;
+}
+
+#mainLogo{
+    width:5rem;
+    margin-left:1px;
+}
+
+#mainHeader{
+    font-size:4rem;
+}
+
+#paragraph{
+    font-size:1.5rem;
+    line-height:1.2;
+    margin-top:0;
+}
+
+#learnMoreBtn{
+    border-radius:10px;
+}
+
+#learnMoreBtn:hover{
+    background:$almostWhite;
+    color:$almostBlack;
+}
+
+.navbar{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:center;
+    background:$almostWhite;
+    width:100vw;
+    height:10vh;
+    margin-bottom:5%;
+}
+
+.navItem{
+    display:inline-block;
+}
+
+.arrows{
+    margin-left:4px;
+}
+
+.loginAndRegister{
+    display:flex;
+    flex-direction: row;
+    margin-top:0;
+    margin-left:25%;
+
+}
+
+.login{
+    margin-right:1rem;
+}
+
+#registerNavBtn{
+    display:block;
+    margin-left:1rem;
+    border-radius:10px;
+    width:6rem;
+    height:2.2rem;
+    background:$almostWhite;
+    color:$almostBlack;
+}
+
+#registerNavBtn:hover{
+    background:$almostBlack;
+    color:$almostWhite;
+}
+
+.featuresDropDown{
+    //display:none;
+    flex-direction:column;
+    width:10%;
+    height:18%;
+    position:absolute;
+    margin-left:15%;
+    margin-top:4%;
+    background:white;
+    font-size:8px;
+    border-radius:8px;
+    padding:0;
+    text-align:center;
+    z-index:1;
+}
+
+.navImages{
+   width:10%;
+   margin-right:10%;
+   margin-bottom:1%;
+}
+
+.navText{
+    margin-left:10%;
+    font-size:8px;
+    margin-bottom:1%;
+    display:flex;
+    align-items:center;
+}
+
+
+
+
+.featuresDropDown li:hover{
+    background:$almostBlack;
+    color:$almostWhite;
+    
+}
+
+
+.companyDropDown{
+    flex-direction:column;
+    width:10%;
+    height:12%;
+    position:absolute;
+    margin-left:0%;
+    margin-top:1%;
+    background:white;
+    font-size:8px;
+    border-radius:8px;
+    padding:0;
+    text-align:center;
+    z-index:1;
+}
+
+.companyDropDown li:hover{
+    background:$almostBlack;
+    color:$almostWhite;
+}
+}

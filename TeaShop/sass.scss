@@ -1,0 +1,879 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:22px;
+    color:seashell;
+    background-color:black;
+    opacity:0.9;
+    margin-top:0;
+}
+
+.navigation{
+    display:flex;
+    flex-direction:row;
+    background-color:black;
+    align-items:center;
+    height:69px;
+    width:100vw;
+    position:fixed;
+    margin-top:0;
+    z-index:2;
+}
+
+#teaLogo{
+    height:50px;
+    margin-left:10px;
+}
+
+#logo{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+}
+
+.links{
+    display:flex;
+    flex-grow:1;
+    justify-content:flex-end;
+    margin-right:3%;
+    align-items:center;
+    
+}
+
+.link{
+    display:inline-flex;
+    flex-direction:row;
+    align-items:center;
+    text-decoration:underline;
+    
+}
+
+// Our Mission section
+
+#mission{
+    margin-right:20px;
+}
+
+#featured{
+    margin-right:20px;
+}
+
+#locations{
+    margin-right:20px;
+}
+
+.ourMissionContainer{
+    display:inline-flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+#ourMissionImage{
+    height:700px;
+    width:1200px;
+    margin-left:20px;
+    position:center;
+}
+
+
+.ourMissionBarContainer{
+    display:flex;
+    flex-direction:column;
+    background-color:grey;
+    justify-content:baseline;
+    align-items:center;
+    position:absolute;
+    height:110px;
+    width:1200px;
+    margin-left:20px;
+    
+}
+
+#ourMissionBarHeader{
+   margin-top:4px;
+   margin-bottom:0%;
+}
+
+#ourMissionBarText{
+     margin-bottom:0%;
+}
+
+// Tea's of the month section
+
+#teaOfMonthH{
+    margin-top:5%;
+    margin-bottom:0%;
+}
+
+.teaSectionContainer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:1200px;
+    margin-left:20px;
+}
+
+.imagesContainer{
+    display:inline-flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    width:1000px;
+    margin-left:20px;
+}
+
+#berryBlitzImage{
+    height:200px;
+    width:300px;
+}
+
+#spicedRumImage{
+    height:200px;
+    width:300px;
+}
+
+#seasonalDonutsImage{
+    height:200px;
+    width:300px;
+}
+
+#myrtleAveImage{
+    margin-left:160px;
+    height:200px;
+    width:300px;
+}
+
+#bedfordBizarreImage{
+    margin-right:160px;
+    height:200px;
+    width:300px;
+}
+
+.teaText{
+    margin-top:10px;
+    text-align:center;
+}
+
+// Location section
+
+.locationsSectionContainer{
+    display:inline-flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+#locationImage{
+    height:500px;
+    width:1200px;
+    margin-bottom:0px;
+}
+
+.locationsContainer{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+#locationsH{
+    margin-top:40px;
+    margin-bottom:15px;
+    text-align:center;
+    position:absolute;
+    z-index:1;
+}
+
+.locationsSectionContainer{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+   
+}
+
+.locationCards{
+    display:inline-flex;
+    flex-direction:row;
+    margin-top:15px;
+    align-items:flex-end;
+    position:absolute;
+    margin-bottom:50px;
+}
+
+#downtownCard{
+    display:flex;
+    flex-direction:column;
+    background-color:black;
+    height:280px;
+    width:300px;
+    justify-content:center;
+    align-items:center;
+    margin-right:40px;
+}
+
+#baysideCard{
+    display:flex;
+    flex-direction:column;
+    background-color:black;
+    height:280px;
+    width:300px;
+    justify-content:center;
+    align-items:center;
+    margin-right:40px;
+}
+
+#oakdaleCard{
+    display:flex;
+    flex-direction:column;
+    background-color:black;
+    height:280px;
+    width:300px;
+    justify-content:center;
+    align-items:center;
+}
+
+.spacing{
+    margin:18px;
+}
+
+// Footer section
+
+.footerContainerDiv{
+    display:flex;
+    flex-direction:column;
+    background-color:black;
+    margin-left:24px;
+    width:1200px;
+  
+}
+
+.contactInfoContainer{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:200px;
+    margin-top:20px;
+}
+
+#copyRight{
+    margin-left:20px;
+    margin-bottom:40px;
+}
+
+#teaCozyH{
+    margin-top:10px;
+}
+
+#email{
+    margin-top:20px;
+}
+
+#number{
+    margin-top:5px;
+}
+
+// Revist positioning course
+
+// Media Queries
+
+
+// For Typical Desktop
+@media only screen and (max-width:1199px){
+    body{
+        background:black;
+        margin:auto;
+    }
+
+    .navigation{
+        z-index:2;
+    }
+
+    .ourMissionBarContainer{
+        height:110px;
+        width:1000px;
+        margin-left:13%;
+        
+    }
+
+
+ .locationsSectionContainer{
+    margin-left:1%;
+}
+
+#ourMissionImage{
+    height:auto;
+    width:1000px;
+    margin-left:15%;
+    position:center;
+}
+
+
+
+.teaSectionContainer{
+    width:1000px;
+    margin-left:4%;
+    font-size:25px;
+}
+
+#locationsH{
+    margin-top:30px;
+    margin-bottom:5px;
+}
+
+.locationCards{
+    display:inline-flex;
+    flex-direction:row;
+    margin-top:8px;
+    align-items:flex-end;
+    position:absolute;
+    margin-bottom:190px;
+}
+
+#downtownCard{
+    height:280px;
+    width:220px;
+    margin-right:25px;
+    margin-left:4%;
+    font-size:22px;
+}
+
+#baysideCard{
+    height:280px;
+    width:220px;
+    margin-right:25px;
+    font-size:22px;
+    line-height:1.2;
+}
+
+#oakdaleCard{
+    height:280px;
+    width:220px;
+    font-size:22px
+}
+
+#locationImage{
+    height:auto;
+    width:1000px;
+
+}
+
+#teaCozyH{
+    margin-top:7%;
+}
+
+.footerContainerDiv{
+    width:1000px;
+    margin-left:6%;
+  
+}
+
+
+}
+
+// For Small Desktop 
+@media only screen and (max-width:1024px){
+    body{
+        background:black;
+        margin:auto;
+    }
+
+    .navigation{
+        width:100%;
+        z-index:2;
+    }
+
+    #ourMissionImage{
+        height:auto;
+        width:900px;
+        margin-left:15%;
+    }
+    
+    .ourMissionBarContainer{
+        height:120px;
+        width:900px;
+        margin-left:13%;
+        font-size:20px;
+    }
+
+
+    .teaSectionContainer{
+        width:1000px;
+        margin-left:0%;
+        font-size:25px;
+    }
+
+    .imagesContainer{
+        width:900px;
+        margin-left:0px;
+    }
+
+    #berryBlitzImage{
+        height:100px;
+        width:200px;
+    }
+    
+    #spicedRumImage{
+        height:100px;
+        width:200px;
+    }
+    
+    #seasonalDonutsImage{
+        height:100px;
+        width:200px;
+    }
+    
+    #myrtleAveImage{
+        margin-left:160px;
+        height:100px;
+        width:200px;
+    }
+    
+    #bedfordBizarreImage{
+        margin-right:160px;
+        height:100px;
+        width:200px;
+    }
+
+
+ .locationsSectionContainer{
+    margin-left:10%;
+}
+
+.footerContainerDiv{
+    margin-left:1%;
+  
+}
+
+.locationsSectionContainer{
+    margin-left:1%;
+}
+ 
+#locationImage{
+    height:auto;
+    width:900px;
+    margin-left:1%;
+}
+
+.footerContainerDiv{
+    width:900px;
+    margin-left:6%;
+  
+}
+
+.locationCards{
+    margin-top:8px;
+    margin-bottom:160px;
+}
+
+#downtownCard{
+    height:280px;
+    width:220px;
+    margin-right:25px;
+    margin-left:4%;
+    font-size:22px;
+}
+
+#baysideCard{
+    height:280px;
+    width:220px;
+    margin-right:25px;
+    font-size:22px;
+    line-height:1.2;
+}
+
+#oakdaleCard{
+    height:280px;
+    width:220px;
+    font-size:22px
+}
+
+   
+}
+
+
+// For Tablet
+@media only screen and (max-width:979px) {
+    body{
+        background:black;
+        margin:auto;
+    }
+
+    .navigation{
+        display:flex;
+        flex-direction:row;
+        height:85px;
+        width:100%;
+        position:fixed;
+        font-size:30px;
+        z-index:2;
+    }
+
+
+    #ourMissionImage{
+        height:auto;
+        width:800px;
+        margin-left:8%;
+        position:center;
+    }
+
+
+    #teaLogo{
+        height:50px;
+        margin-left:10px;
+        font-size:25px;
+    }
+
+
+    .ourMissionBarContainer{
+        height:180px;
+        width:800px;
+        margin-left:8%;
+        font-size:30px;
+        line-height:1.2;
+        text-align:center;
+}
+
+    .teaSectionContainer{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        width:800px;
+        margin-left:8%;
+        font-size:35px;
+}
+
+
+
+     #locationImage{
+       height:auto;
+       width:800px;
+       margin-left:6%;
+}
+
+
+    .locationsSectionContainer{
+       margin-left:8%;
+}
+
+.teaSectionContainer{
+    width:850px;
+    margin-left:0%;
+    font-size:25px;
+}
+
+    .imagesContainer{
+       width:800px;
+       margin-left:0%;
+}
+
+#berryBlitzImage{
+    height:100px;
+    width:200px;
+}
+
+#spicedRumImage{
+    height:100px;
+    width:200px;
+}
+
+#seasonalDonutsImage{
+    height:100px;
+    width:200px;
+}
+
+#myrtleAveImage{
+    margin-left:100px;
+    height:100px;
+    width:200px;
+}
+
+#bedfordBizarreImage{
+    margin-right:1px;
+    height:100px;
+    width:200px;
+}
+
+#downtownCard{
+    height:280px;
+    width:220px;
+    margin-right:20px;
+    margin-left:8%;
+    font-size:22px;
+}
+
+#baysideCard{
+    height:280px;
+    width:220px;
+    margin-right:20px;
+    font-size:22px;
+    line-height:1.2;
+}
+
+#oakdaleCard{
+    height:280px;
+    width:220px;
+    font-size:22px;
+}
+
+.footerContainerDiv{
+    height:auto;
+    margin-left:4%;
+    width:800px;
+  
+}
+
+.locationCards{
+    margin-bottom:80px;
+}
+
+
+}
+
+// For Mobile Landscape
+@media only screen and (max-width:767px){
+    body {
+        background:black;
+
+    }
+
+    .navigation{
+        margin:auto;
+        z-index:2;
+    }
+
+    #teaLogo{
+        height:60px;
+        margin-left:10px;
+        font-size:75px;
+    }
+
+    #ourMissionImage{
+        height:auto;
+        width:700px;
+        margin-left:10%;
+    }
+
+
+    .ourMissionBarContainer{
+        height:auto;
+        width:700px;
+        margin-left:11%;
+        font-size:20px;
+        line-height:1.6;
+}
+
+.locationsSectionContainer{
+    margin-left:14%;
+}
+
+.teaSectionContainer{
+    width:750px;
+    margin-left:0%;
+    font-size:25px;
+}
+
+    .imagesContainer{
+       width:700px;
+       margin-left:0%;
+}
+
+#berryBlitzImage{
+    height:80px;
+    width:180px;
+}
+
+#spicedRumImage{
+    height:80px;
+    width:180px;
+}
+
+#seasonalDonutsImage{
+    height:80px;
+    width:180px;
+}
+
+#myrtleAveImage{
+    margin-left:100px;
+    height:80px;
+    width:180px;
+}
+
+#bedfordBizarreImage{
+    margin-right:100px;
+    height:80px;
+    width:180px;
+}
+
+
+#locationImage{
+    height:auto;
+    width:700px;
+    margin-bottom:0px;
+}
+
+.footerContainerDiv{
+    height:auto;
+    margin-left:4%;
+    width:700px;
+  
+}
+
+.locationCards{
+    margin-bottom:20px;
+}
+
+
+#downtownCard{
+    height:260px;
+    width:200px;
+    margin-right:20px;
+    margin-left:8%;
+    font-size:19px;
+}
+
+#baysideCard{
+    height:260px;
+    width:200px;
+    margin-right:20px;
+    font-size:19px;
+}
+
+#oakdaleCard{
+    height:260px;
+    width:200px;
+    font-size:19px;
+}
+
+#locationsH{
+    margin-top:40px;
+    margin-bottom:15px;
+    font-size:30px;
+}
+
+}
+
+
+// For Typical Mobile
+@media only screen and (max-width:479px){
+    body {
+        background:black;
+    }
+
+    .navigation{
+        margin:auto;
+        z-index:2;
+    }
+    
+    #teaLogo{
+        height:50px;
+        margin-left:10px;
+        font-size:75px;
+    }
+
+    #ourMissionImage{
+        height:auto;
+        width:650px;
+        margin-left:10%;
+    }
+
+
+    .ourMissionBarContainer{
+        height:auto;
+        width:650px;
+        margin-left:17%;
+        font-size:20px;
+        line-height:1.6;
+}
+
+.teaSectionContainer{
+    width:700px;
+    margin-left:1%;
+    font-size:20px;
+}
+
+    .imagesContainer{
+       width:650px;
+       margin-left:0%;
+}
+
+#berryBlitzImage{
+    height:60px;
+    width:160px;
+}
+
+#spicedRumImage{
+    height:60px;
+    width:160px;
+}
+
+#seasonalDonutsImage{
+    height:60px;
+    width:160px;
+}
+
+#myrtleAveImage{
+    margin-left:100px;
+    height:60px;
+    width:160px;
+}
+
+#bedfordBizarreImage{
+    margin-right:100px;
+    height:60px;
+    width:160px;
+}
+
+.locationsSectionContainer{
+    margin-left:90%;
+}
+
+#locationImage{
+    height:auto;
+    width:650px;
+    margin-bottom:0px;
+}
+
+.footerContainerDiv{
+    height:auto;
+    margin-left:7%;
+    width:650px;
+  
+}
+
+.locationCards{
+    margin-bottom:3px;
+}
+
+
+#downtownCard{
+    height:250px;
+    width:190px;
+    margin-right:20px;
+    margin-left:8%;
+    font-size:18px;
+}
+
+#baysideCard{
+    height:250px;
+    width:190px;
+    margin-right:20px;
+    font-size:18px;
+}
+
+#oakdaleCard{
+    height:250px;
+    width:190px;
+    font-size:18px;
+}
+
+#locationsH{
+    margin-top:25px;
+    margin-bottom:10px;
+    font-size:30px;
+}
+
+}
