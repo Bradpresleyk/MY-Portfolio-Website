@@ -46,13 +46,19 @@ body{
 
 a{
     text-decoration:none;
+    
+}
+
+a:hover{
+    color:grey;
+    
 }
 
 .link{
     display:inline-flex;
     flex-direction:row;
     align-items:center;
-    text-decoration:underline;
+    text-decoration:none;
     
 }
 
