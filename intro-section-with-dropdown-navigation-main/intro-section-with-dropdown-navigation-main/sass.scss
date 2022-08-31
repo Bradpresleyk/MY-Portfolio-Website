@@ -479,7 +479,7 @@ li{
     }
     
     .featuresDropDown{
-        //display:none;
+        
         flex-direction:column;
         width:10%;
         height:18%;
@@ -540,7 +540,7 @@ li{
         justify-content: space-between;
         align-items:flex-end;
         margin-top:8%;
-        //width:50%;
+        
     }
     
     .bottomLogo{
@@ -723,6 +723,7 @@ li{
     .navItem{
         display:inline-block;
     }
+
     
     .arrows{
         margin-left:4px;
@@ -907,6 +908,12 @@ body{
 
 .navItem{
     display:inline-block;
+    
+}
+
+
+.navItem{
+    display:inline-block;
 }
 
 .arrows{
@@ -999,4 +1006,26 @@ body{
     background:$almostBlack;
     color:$almostWhite;
 }
+}
+
+@media only screen and (min-width:1181px){
+    #company:hover{
+        color:#0724e1;
+      }
+      
+      #featuresNav:hover{
+          color:#0724e1;
+      }
+      
+      #careers:hover{
+          color:#0724e1;
+      }
+      
+      #about:hover{
+          color:#0724e1;
+      }
+
+      .navItem:hover{
+        cursor: pointer;
+     }
 }
