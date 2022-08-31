@@ -19,6 +19,10 @@
 
 }
 
+.links{
+      text-decoration: none;
+}
+
 html {
       font-family: 'Quicksand', sans-serif;
 }
@@ -26,13 +30,15 @@ html {
 body {
       width: 100%;
       background: #f5f5f5;
+      
      
 }
 
 .wrapper {
       width: 90%;
-      margin: 0 auto;
+      margin:0 auto;
 }
+
 
 .navBar::after {
       content: "";
@@ -46,6 +52,8 @@ h1 {
       font-family:"kobeBlack";
 }
 
+
+
 p {
       color: black;
       font-size: 16px;
@@ -54,12 +62,15 @@ p {
 
 /* navbar */
 
-nav {
+.navBar {
+
       height: 70px;
-      line-height: 70px;
+      width:100vw;
+      
 }
 
-nav a img {
+
+.navBar a img {
       vertical-align: middle;
       width: 30px;
       height: 30px;
@@ -72,12 +83,13 @@ nav a:nth-child(2) {
 /* header */
 
 header {
-      margin: 100px 0 200px 120px;
+       margin:100px 0 200px 120px; 
+      
 }
 
-header p {
+ header p {
       width: 60%;
-      margin-top: 10px;
+      margin-top: 10px; 
 }
 
 /* .work */
@@ -117,6 +129,12 @@ footer p {
       color: grey;
       margin: 60px auto;
 }
+
+#bkHeader{
+      margin:10px;
+}
+
+
 
 /* Responsiveness */
 
@@ -165,7 +183,10 @@ img{
 
 #bkHeaderLink{
       text-decoration:none;
+
 }
+
+
 
 #myProjectsH{
       text-align:center;
@@ -219,6 +240,8 @@ header{
       color:black;
 }
 
+
+
 a{
       text-decoration: none;
       transition: 0.8s;
@@ -229,3 +252,31 @@ footer{
 }
 
 
+.navBar {
+
+      height: 70px;
+      line-height: 70px;
+
+}
+
+
+@media only screen and (min-width:980px){
+      .navBar {
+      line-height: 70px;
+      position:fixed;
+      background:#DBDBDB;
+      
+      top:0;
+      z-index:2;
+      overflow:hidden; 
+      }
+
+      #bkHeader{
+            margin-left:50px;
+      }
+
+      .link:hover{
+            color:white;
+      }
+      
+}
