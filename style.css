@@ -134,6 +134,9 @@ footer p {
       margin:10px;
 }
 
+#githubAcc:hover{
+      color:white;
+}
 
 
 /* Responsiveness */
